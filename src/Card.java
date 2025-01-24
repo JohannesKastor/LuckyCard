@@ -8,7 +8,7 @@ public class Card {
     Random rand = new Random();
     int CardNumber = rand.nextInt(14);
 
-    int CardSymbol = rand.nextInt(5);
+
 
     System.out.println(CardNumber);
     
