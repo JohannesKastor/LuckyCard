@@ -7,9 +7,9 @@ public class Deck {
 	
 	public Deck() {
 		cards = new ArrayList<>();
-		String[] Suits = {"Diamonds", "Clubs", "Hearts","Spades"};
+		String[] Suits = {"Diamonds", "Clubs", "Hearts", "Spades"};
 		for (String suit: Suits) {
-			for (int rank =7; rank <= 12; rank++) {
+			for (int rank = 1; rank <= 13; rank++) {
 				cards.add(new Card(suit,rank));
 			}
 		}

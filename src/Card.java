@@ -1,12 +1,12 @@
 public class Card {
 	private String Suit;
-	private int Number;
+	private int Rank;
 	private int Value;
 	
-	public Card(String Suit, int Number) {
+	public Card(String Suit, int Rank) {
 		this.Suit = Suit;
-		this.Number = Number;
-		this.Value = Number + getSuitBonus(Suit);
+		this.Rank = Rank;
+		this.Value = Rank + getSuitBonus(Suit);
 	}
 	
 	private int getSuitBonus(String Suit) {
@@ -25,14 +25,17 @@ public class Card {
 		return Value;
 	}
 	
-	public int getNumber() {
-		return Number;
+	public int getRank() {
+		return Rank;
 	}
 	
 	public String getSuit() {
 		return Suit;
 	}
 	
-	
+    @Override
+    public String toString() {
+        return Suit + " " + Rank + " -> Value = " + Value;
+    }
 	
 }
